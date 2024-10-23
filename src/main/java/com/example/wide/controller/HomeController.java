@@ -19,9 +19,11 @@ public class HomeController {
     public String login(HttpServletRequest request) {
         String id = request.getParameter("userId");
         if(id.equals("admin") || id.equals("admin123")) {
-            return "login";
+            request.setAttribute("msg", "로그인 성공");
+            return "alert";
         }else {
-           return "index";
+           request.setAttribute("msg", "등록된 아이디가 아닙니다.");
+           return "alert";
         }
     }
 }

@@ -66,19 +66,15 @@
     <body>
         <div class="container">
             <h2>Login</h2>
-            <form method="post" action="/login">
+            <form method="post" action="/login" id="loginForm">
                 <div class="login_input">
                     <input type="text" name="userId" placeholder="ID" required autofocus/>
                     <input type="password" name="userPw" placeholder="PASSWORD" required />
                 </div>
                 <div class="submit_button">
-                    <input type="submit" value="Login" onclick="checkValid();return false;"/>
+                    <input type="submit" value="Login"/>
                 </div>
             </form>
         </div>
-
-    <script type="text/javascript">
-
-    </script>
 </body>
 </html>
